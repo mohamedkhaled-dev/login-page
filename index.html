@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Signup UI</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Media Query File -->
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="container-fluid wrapper">
+      <!-- Login Form Section -->
+      <div class="row">
+        <div class="form-box login col-12 col-md-6 text-center">
+          <form>
+            <h2 class="fw-bold">Login<span class="dot">.</span></h2>
+            <div class="input-group d-flex flex-column">
+              <div class="user-name input-field position-relative my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  placeholder="Username"
+                /><i class="fa-solid fa-user"></i>
+              </div>
+              <div class="input-empty d-none">
+                <p>Please fill out this field.</p><i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="user-pass input-field position-relative my-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="userPass"
+                  placeholder="Password"
+                /><i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="input-empty d-none">
+                <p>Please fill out this field.</p><i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="input-incorrect d-none">
+                <p>Incorrect username or password. Please try again.</p>
+              </div>
+              <div class="forgot-link pt-2">
+                <a href="#">Forgot password?</a>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-main shadow btn-login">Login</button>
+            <p>or login with social platforms</p>
+            <div
+              class="social-group d-flex justify-content-center align-items-center gap-2 pb-4"
+            >
+              <a href="mailto:mohamedkhaled20031@gmail.com" target="_blank"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+              <a
+                href="https://web.facebook.com/profile.php?id=100002739492252"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://github.com/mohamedkhaled-dev" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mohamedkhaled-eg/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Registration Form Section -->
+        <div class="form-box col-12 col-md-6 text-center register-form">
+          <form novalidate>
+            <h2 class="fw-bold">Registration<span class="dot">.</span></h2>
+            <div class="input-group d-flex flex-column">
+              <div class="user-name input-field position-relative my-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="newUserName"
+                  placeholder="Username"
+                /><i class="fa-solid fa-user"></i>
+              </div>
+              <div class="input-empty d-none">
+                <p>Please fill out this field.</p><i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="input-rules">
+                <p>Please use only letters (no special characters allowed). It can be two words.</p>
+              </div>
+              <div class="input-duplicate user-duplicate-info d-none">
+                <p>This username is already taken.</p><i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="user-email input-field  position-relative my-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="newUserEmail"
+                  placeholder="Email"
+                /><i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="input-empty d-none">
+                <p>Please fill out this field.</p><i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="input-rules">
+                <p class="break-all">Please enter a valid email (e.g., example@domain.com).</p>
+              </div>
+              <div class="input-duplicate email-duplicate-info d-none">
+                <p>This email is already registered.</p><i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="user-pass input-field position-relative my-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="newUserPass"
+                  placeholder="Password"
+                /><i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="input-empty d-none">
+                <p>Please fill out this field.</p><i class="fa-solid fa-circle-exclamation"></i>
+              </div>
+              <div class="input-rules">
+                <p>Password must include an uppercase letter, lowercase letter, and special character (e.g., @, #, $).</p>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-main btn-register shadow">Register</button>
+            <p class="mt-0">or register with social platforms</p>
+            <div
+              class="social-group d-flex justify-content-center align-items-center gap-2 pb-4"
+            >
+              <a href="mailto:mohamedkhaled20031@gmail.com" target="_blank"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+              <a
+                href="https://web.facebook.com/profile.php?id=100002739492252"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://github.com/mohamedkhaled-dev" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mohamedkhaled-eg/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Toggle Panel for Switching Between Login and Registration -->
+        <div class="toggle-box">
+          <div class="toggle-panel col-12 col-md-6 toggle-left">
+            <h2 class="fw-bold">Hello, Welcome</h2>
+            <p class="mb-0">Don't have an account?</p>
+            <button type="button" class="btn register-toggle-btn">Register</button>
+            <img
+              src="images/Signup-cuate.svg"
+              alt="Phone sign up illustration"
+            />
+          </div>
+          <div class="toggle-panel col-12 col-md-6 toggle-right">
+            <h2 class="fw-bold">Welcome Back!</h2>
+            <p class="mb-0">Already have an account?</p>
+            <button type="button" class="btn login-toggle-btn">Login</button>
+            <img
+              src="images/Tablet-login-cuate.svg"
+              alt="Tablet login illustration"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript File -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

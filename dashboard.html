@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="vh-100 dashboard-body position-relative">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand py-3">
+      <div class="container-fluid">
+        <h2 class="m-0 text-white">Dashboard</h2>
+        <button class="btn btn-logout m-0">Logout</button>
+      </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main
+      class="container h-75 main-content d-flex flex-column justify-content-center align-items-center mt-5"
+    >
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-11 text-center">
+          <img
+            src="images/Welcome-cuate.svg"
+            alt="Welcome"
+            class="welcome-img"
+          />
+          <div class="welcome-content d-flex">
+            <h3 class="mt-4">
+              Welcome to Your Dashboard <span class="dot">,</span>
+              <span id="usernameDisplay"></span>
+              <span class="dot">!</span>
+            </h3>
+            <img src="images/welcome-icon.svg" alt="Welcome icon svg" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="text-center position-absolute start-0 end-0 bottom-0">
+      <p class="fs-6 m-0 text-white">
+        &copy; 2024 Login & Signup UI. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
